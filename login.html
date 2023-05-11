@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="./icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <title>Axion green</title> 
+</head>
+<body>
+    <!-- MEUNU DE NAVEGAÇÂO -->
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html">Axion <span>Green</span></a></div>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li><!-- Item da lista -->
+                <li><a href="sobre.html">Sobre</a></li><!-- Introdução -->
+                <li><a href="problemas.html">Problemas</a></li><!-- O que entregamos de forma detalhada -->
+                <li><a href="inovacao.html">Inovação</a></li><!-- Shift alt p/ baixo copia em baixo -->
+                <li><a href="diferenciais.html">Diferenciais</a></li><!-- Volores, diferencias e amais -->
+                <li><a href="selo.html">Selo</a></li>
+                <li><a href="login.html">Login</a></li><!-- http://localhost/login.html -->
+                <li><a href="Contato.html">Contato</a></li>
+                <li><button id="theme-button" class="theme-button"> trocar tema </button></li>
+                
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <!-- Reutilizarei a sessão contact para facilitar Css -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Login</h2>
+            <div class="contact-content">
+               <div class="column left">
+                   <div class="text">Sing-up</div>
+                   <p>Entre para desfrutar da nossa vasta gama de produtos e diferenciais
+                </p>
+               
+               <div class="icons">
+                   <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nickname</div>
+                            <div class="sub-title">Axion123</div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <div class="info">
+                        <div class="head">Celular</div>
+                        <div class="sub-title">(55)11 0000-0000</div>
+                    </div>
+               </div>
+               <div class="row">
+                <ion-icon name="mail-outline"></ion-icon>
+                <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">Axion.green@gmail.com</div>
+                    </div>
+                </div>
+               </div>
+            </div><!--column left-->
+            <div class="column rigth">
+                <div class="text">Seu usuario</div>
+                <form action="#" method="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Username" id="usuario" >
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" id="email" >
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="field">
+                            <input type="password" placeholder="Senha" name="senha" id="senha">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button id="login" type="submit" onclick="validar()">Entrar</button><!-- onclick="validar()" -->
+                    </div>
+                    <br>
+                    <div class="button-cadastro">
+                        <label >não posui login?</label>
+                        <button type="submit" id="btn-cadastro">cadastre-se</button><!-- onclick="cadastro()" -->
+                    </div>
+
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Criado por <a href="https://github.com/Pontessxx">Pontes</a> | <a href="https://github.com/gukawamura">Gustavo</a> | <a href="https://github.com/rcm2005">Rafael</a> | <a href="https://github.com/Capriottiii">Felipe</a> | <a href="https://github.com/Viniyama23">VInicius</a></span>
+        <span><br>Imagens geradas pela IA: <a href="https://playgroundai.com/create">Playgrondai</a></span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="script.js"></script>
+    <script src="tema.js"></script>
+    
+    
+    <!-- Essa parte de código representa a inclusão de algumas bibliotecas externas em uma página da web. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</body>
+</html>
