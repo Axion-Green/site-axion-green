@@ -85,6 +85,31 @@ hr{
     border: none;
     transition: background .4s ease;
 }
+header{
+    background:linear-gradient(to right, var(--cor-pri-header), var(--cor-section));
+    padding: 5px;
+    font-family: var(--font-fam);
+    color: var(--font-color-sobre-text);
+    list-style: none;
+    text-align: center;
+}
+header ul{
+    margin: 0;
+    padding: 3px;
+}
+header li{
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+header li a {
+    color: var(--font-color-sobre-text);
+    
+}
+header li a:hover {
+    transition: .3s ease;
+    color: var(--cor-set);
+}
 /*  navbar - menu de interação  #home*/
 .navbar{
     position: fixed;
