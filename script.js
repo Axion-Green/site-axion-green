@@ -26,6 +26,8 @@ $(document).ready(function(){
     imgHome();
     //slide-selo
     selo();
+    //slide-mapa
+    imgMap();
     //home-typing
     var typed = new Typed(".typing", {
         strings:["Inclusão", "Exelência", "Prosperidade","Sustentabilidade","Inovação"],
@@ -102,6 +104,22 @@ function imgHome(){
         var time = 2500;
         function slideShow() {
             document.getElementById('image-car').src = imagens[Index];
+            Index++;
+            if (Index == imagens.length) {
+                Index = 0;
+            }
+            setTimeout(slideShow, time);
+        } 
+        slideShow(); 
+    }
+};
+function imgMap(){
+    if (window.location.pathname === "/index.html"){
+        var imagens = [    './img/sebastiao-Salgado.webp',    './img/mapeamento-osasc.png'];
+        var Index = 0;
+        var time = 2500;
+        function slideShow() {
+            document.getElementById('image-map').src = imagens[Index];
             Index++;
             if (Index == imagens.length) {
                 Index = 0;
