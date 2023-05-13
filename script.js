@@ -60,8 +60,9 @@ function validar(){
         alert("preencha os campos, varifique se não deixou nada em branco")
     }else{
         //bnt-entrar
-        window.open('ecomerce.html')
-        window.location.href = "ecomerce.html";
+        window.open('mapeamento.html')
+        window.location.href = "mapeamento.html";
+        window.close()
     }
 }
 //cadastro
@@ -78,7 +79,9 @@ function validarContato(){
 }
 //btn-cadastro
 var btnCadastro = document.getElementById("btn-cadastro").addEventListener("click", ()=>{
-    window.open('cadastro.html');
+    //window.location.href = "cadastro.html";
+    window.open('cadastro.html')
+    //window.close();
 });
 //slide-img-function-selo
 function selo(){
